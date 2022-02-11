@@ -19,6 +19,7 @@ class ConferenceController extends AbstractController
     {
         $this->twig = $twig;
     }
+
     #[Route('/', name: 'homepage')]
     public function index(ConferenceRepository $conferenceRepository): Response
     {
